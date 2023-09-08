@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cary Htan's Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Cary Htan</div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">Cary Htan</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="./assets/caryProfile.JPG" alt="Cary Htan profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Cary Htan</h1>
+        <p class="section__text__p2">Columbia University Student <br> Class of Fall 2026 </p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Cary Htan Resume.pdf')"
+          >
+            Resume
+          </button>
+          <!-- <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button> -->
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://linkedin.com/in/cary-htan-41354a273'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/caryhtan'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="text-container">
+              <p>
+                Hi, I'm Cary Htan. I am currently a sophomore studying Computer Science with concentration in Business Mangement at Columbia University - expected to graduate in May 2026. I have passion for Project Management in Tech so during the school years, I have been involed with numerous clubs and took on leadership roles - Technology Chair at CKI at OCC. 
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      /> -->
+    </section>
+    <section id="experience">
+      <h2 class="title">Experience</h2>
+  
+      <!-- Technology Chair, Circle K International at OCC -->
+      <h3>Technology Chair, Circle K International at OCC</h3>
+      <ul>
+        <li>Oversaw and maintained the CKI website, ensuring smooth operation and prompt resolution of technical issues.</li>
+        <li>Designed and produced engaging graphical content for CKI events and social media platforms.</li>
+        <li>Managed and organized essential CKI documents, ensuring their accessibility and accuracy when needed.</li>
+      </ul>
+      
+      <!-- App Developer Intern, Art Sphere Inc -->
+      <h3>App Team Intern, Art Sphere Inc</h3>
+      <ul>
+        <li>Utilizes Java script for robust back-end development and server-side functionality</li>
+        <li>Implements interactive front-end features using React, enhancing user engagement.</li>
+        <li>Ensures seamless integration, security, and cross-platform compatibility.</li>
+        <li>Provided consistent support, updates, and optimization for an enriching user experience.</li>
+      </ul>
+      
+      <!-- Council Member, Columbia University General Studies Student Council -->
+      <!-- <h3>Council Member, Columbia University General Studies Student Council</h3>
+      <ul>
+        <li>Represented the diverse undergraduate population by pursuing academic, social, administrative, and policy initiatives.</li>
+        <li>Managed and distributed student life fees responsibly.</li>
+        <li>Actively advocated on behalf of students for their concerns.</li>
+        <li>Acted as a liaison between the student body, the School of General Studies’ administration, and the Columbia University community.</li>
+      </ul> -->
+      
+      <!-- Student Assistant, Orange Coast College -->
+      <h3>Front Desk Student Assistant, Orange Coast College</h3>
+      <ul>
+        <li>Worked at the front desk/reception area, providing clerical support to the Division and the Dean.</li>
+        <li>Processed registration and enrollment forms.</li>
+        <li>Coordinated special events, data entry, and maintenance of absence reports.</li>
+        <li>Performed limited budget tracking and fielded questions from the campus population and the general public.</li>
+      </ul>
+    </section>
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-1.png"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Inventory Management <br> (Django Website)</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/caryhtan/petsisDjango'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/caryhtan/petsisDjango'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-2.jpeg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Art Sphere Inc App</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/artsphereinc/'"
+              >
+                Github
+              </button>
+              <!-- <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/artsphereinc/'"
+              >
+                Live Demo
+              </button> -->
+            </div>
+          </div>
+          <!-- <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="./assets/project-3.png"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Live Demo
+              </button>
+            </div>
+          </div> -->
+        </div>
+      </div>
+      <!-- <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#contact'"
+      /> -->
+    </section>
+    <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">ch3756@columbia.edu</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/cary-htan-41354a273">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
